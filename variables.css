@@ -1,0 +1,13 @@
+ul {
+  font-size: 14px;
+  color: blue;
+}
+
+ol {
+  font-size: 18px;
+  color: blue li;
+  color-text-decoration: none;
+  color-list-style-type: none;
+}
+
+/*# sourceMappingURL=variables.css.map */
