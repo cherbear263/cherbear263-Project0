@@ -63,6 +63,13 @@ main {
 .boxes {
   margin-bottom: 50px;
 }
+.boxes a {
+  color: #09626a;
+}
+.boxes a:hover {
+  text-decoration: none;
+  color: #032124;
+}
 
 .grid {
   background-color: green;
@@ -193,6 +200,17 @@ button {
 
 #event_register .button {
   margin-top: 30px;
+}
+
+#paybtn {
+  color: #F9F7F3;
+}
+
+#payAlert, #paid {
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 #event_register p {

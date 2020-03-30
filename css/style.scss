@@ -60,7 +60,14 @@ main {
     background-color: $blue;
     }
 .boxes {
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+    a {
+        color: darken($aqua, 15%);}
+        
+    a:hover {
+        text-decoration: none;
+        color: darken($aqua, 30%);
+        }}
 .grid {
     background-color: green;
     display: grid;

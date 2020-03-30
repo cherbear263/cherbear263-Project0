@@ -63,6 +63,13 @@ main {
 .boxes {
   margin-bottom: 50px;
 }
+.boxes a {
+  color: #09626a;
+}
+.boxes a:hover {
+  text-decoration: none;
+  color: #032124;
+}
 
 .grid {
   background-color: green;
