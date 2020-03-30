@@ -1,0 +1,149 @@
+$aqua: #0FA3B1;
+$blue: #B5E2FA;
+$white: #F9F7F3;
+$yellow: #EDDEA4;
+$orange: #F7A072;
+body {
+    background-color: $white;}
+.translucent {
+    background-color: $white;
+    opacity: 0.6;
+    z-index: -20;
+    width: 70%;
+    padding: 20px;
+    }
+.jumbotron {
+    background: url("../img/jumbo.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    
+
+    h1 {
+        color: black;
+        font-size: 4em;
+        font-family: 'Yeseva One', cursive;
+        margin-top: 30px;
+        opacity: 1;}
+        p{
+            font-size: 2em;
+            color: black;
+            opacity: 1;}
+    }
+main {
+    padding-top: 40px;}
+
+%box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    h2 {
+        position: relative;
+        top: 60px;
+        text-align: center;}
+}
+
+.register {
+    @extend %box;
+    background-color: $aqua;
+    }
+.about {
+    @extend %box;
+    background-color: $orange;
+    }
+.events {
+    @extend %box;
+    background-color: $yellow;
+    }
+.donate {
+    @extend %box;
+    background-color: $blue;
+    }
+.boxes {
+    margin-bottom: 50px;}
+.grid {
+    background-color: green;
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    background-color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
+footer {
+    padding: 70px;
+    background-color: darken($aqua, 15%);
+    a {
+        display: block;
+        font-size: 1.1em;
+
+    }
+    a:hover {
+        color: lighten($orange, 10%);
+        text-decoration: none;}
+    p, h3, a, address {
+        color: $white;}
+
+    form {
+        padding: 20px;
+
+        input {
+            max-width: 100%;}
+
+    }
+    
+    }
+button{
+    padding: 5px;
+    margin-top: 20px;
+    width: 100px;
+    background-color: darken($aqua,15%);
+    border: 1px solid $white;
+    color: $white;
+    }
+#about_nav {
+    background-color: $white;}
+.about_page {
+    background: darken($aqua, 15%);
+    margin-top: 50px;
+    }
+article about_page {
+    background: $white;
+    padding: 20px;
+    margin-top: 50px;}
+.button {
+    width: 150px;
+    background-color: darken($aqua, 15%);
+    color: $white;
+    }
+.button:hover {
+    background-color: darken($aqua, 5%);
+    color: $white;
+    }
+
+@media (max-width: 1000px){
+    .col-sm-12 {
+    max-width: 100%;
+    margin-top: 30px;}
+    .register {
+        text-align: center;}
+ }
+@media (max-width: 500px){
+    .head-text{
+        width: 100%;
+        padding: 20px;
+
+    }
+        .translucent {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+ }          

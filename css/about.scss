@@ -1,0 +1,65 @@
+@import 'style';
+body {
+    background: darken($aqua, 15%)
+}
+.bg-light {
+    background: $white!important
+}
+article {
+    background: $white;
+    border-radius: 5px;
+    padding: 15px;
+}
+button {
+    border-radius: 5px;
+    width: 200px;
+}
+.about_page h1 {
+    color: $white;
+    margin-bottom: 30px;
+}
+.event_article {
+    max-width: 750px;
+    margin-top: 40px;
+}
+#event_details {
+    color: darken($aqua, 15%)
+}
+#event_register .button {
+    margin-top: 30px;
+
+}
+#event_register p{
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+#date {
+    background-color: $orange;
+    margin-left: 15px;
+    width: 70px;
+    height: 90px;
+    border-radius: 5px;
+    padding: 5px;
+    p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    #month {
+        font-size: 1.5em;
+        margin-top: 0;
+        position: relative;
+        top: -20px;
+    }
+}
+
+footer {
+    background-color: $white;
+
+    h1,h2,h3,p,a,li, address {
+        color: darken($aqua, 15%);
+    }
+    margin-top: 100px;
+
+}
